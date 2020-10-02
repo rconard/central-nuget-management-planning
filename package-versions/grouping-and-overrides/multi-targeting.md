@@ -74,3 +74,13 @@ During a build targeting .NET Framework 4.7.2, `foo` will be imported with versi
 During a build targeting .NET Core 3.1, `foo` will be imported with version 3.3.3.
 
 During a build targeting .NET Framework 4.7.2, `foo` will be imported with version 4.4.4.
+
+Alternatively this could be simplifed as below so that changing the TFM would surface the need to revisit the groups:
+
+```xml
+<Project>
+  <ItemGroup>
+    <PackageReference Include="foo" CentralManagementGroup="A$(TargetFramework)" />
+  </ItemGroup>
+</Project>
+```
