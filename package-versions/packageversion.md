@@ -18,8 +18,6 @@ By centrally managing package versions, solutions can maintain more consistency 
 
 If any packages are imported as transitive dependencies from a `<PackageReference>` where the `Version` is controlled by a `<PackageVersion>` in `Directory.Packages.props`, then the version of the transitive dependency will be controlled by CPVM.
 
-If a `<PackageVersion>` has been defined for the package that is imported transitively, then that version will be imported across the solution.
-
 ## How to Use Central Package Version Management
 In the solution directory, create a `Directory.Packages.props` file to define versions for each package used in your projects.
 
