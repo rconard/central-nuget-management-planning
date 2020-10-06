@@ -14,4 +14,14 @@ In large companies, you will often find dedicated engineering teams focused on b
 
 To provide an example, our Visual Studio repositories have more than 7000 projects between them with some of the solutions containing thousands of projects. Across this diverse landscape of projects covering features both new and old, you can find nearly every iteration of NuGet configurations from packages.config to the latest features of `<PackageReference>` in SDK-style projects. Visual Studio is one of the most complex desktop applications ever built, and we are proud of our team of engineers who keep our engineering systems running to support this Herculean effort. As Andrew Arnott, a member of this team recently shared, "it would not be possible to ship Visual Studio without the tools and infrastructure that we have built to manage our NuGet dependencies and feeds across our product."
 
-At its core, Microsoft is a platform company with a mission to help every person and every organization on the planet to achieve more. As part of this mission, the NuGet team is taking the next step in our process of open sourcing and sharing the tools that we use to power our most complex projects to help software teams everywhere to be more effective. Our goal is to democratize the tools that make us successful to give every .NET team the same opportunities.
+## Package Version Management
+
+[Central Package Version Management](/package-versions/packageversion/) provides tools to control the versions of NuGet dependencies across projects in a solution.
+
+## Feed Management
+
+[Central Feed Management](/feeds/feeds/) provides tools to manage which feeds are available for projects across a solution.
+
+## Maintainer
+
+[Central NuGet Maintainer](/maintainer/maintainer/) automates many of the dependency management tasks required on large repositories.
